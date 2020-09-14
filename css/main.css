@@ -1,0 +1,339 @@
+@import url(reset.css);
+
+@font-face {
+    font-family: BYekan;
+    src: url(../fonts/BYekan.eot);
+}
+
+@font-face {
+    font-family: BYekan;
+    src: url(../fonts/BYekan.ttf);
+}
+
+@font-face {
+    font-family: BYekan;
+    src: url(../fonts/BYekan.woff);
+}
+
+body {
+    background: #dcdddf;
+    font-family: BYekan;
+    direction: rtl;
+}
+
+.main {
+    width: 1000px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.clearfix {
+    clear: both;
+}
+
+/*------------------------------HEADER--------------------------------------------*/
+header {
+    width: 100%;
+}
+
+.logo {
+    float: right;
+    margin: 25px;
+}
+
+.social {
+    float: left;
+    margin: 39px 0 39px 29px;
+}
+
+.social ul li {
+    float: left;
+    margin-right: 8px;
+}
+
+/*------------------------------NAVIGATION--------------------------------------------*/
+nav {
+    background: #323a45;
+    width: 100%;
+    height: 54px;
+}
+
+nav ul li {
+    float: right;
+    border-left: 1px solid #474f59;
+    box-shadow: -1px 0 0 0 #222830;
+}
+
+nav ul li:last-child {
+    border-left: none;
+    box-shadow: none;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 14px 16px;
+    display: block;
+}
+
+/*------------------------------SLIDER--------------------------------------------*/
+.slider-bg {
+    background: #25b695;
+    height: 320px;
+    margin-top: 16px;
+    position: relative;
+}
+
+.nav-prev {
+    background: url("../images/prev.png") left top no-repeat;
+    width: 53px;
+    height: 53px;
+    position: absolute;
+    top: 133px;
+    left: 0;
+}
+
+.nav-next {
+    background: url("../images/next.png") right top no-repeat;
+    width: 53px;
+    height: 53px;
+    position: absolute;
+    top: 133px;
+    right: 0;
+}
+
+.slider-select {
+    position: absolute;
+    bottom: 20px;
+    left: 29px;
+}
+
+.slider-select li {
+    background: #34ceab;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    float: right;
+    margin-right: 3px;
+}
+
+.slider-select li a {
+    position: absolute;
+    width: 12px;
+    height: 12px;
+}
+
+.slider-select li a.active {
+    background: #f26c4e !important;
+    border-radius: 50%;
+}
+
+.text-slide {
+    float: left;
+    width: 357px;
+    margin: 61px 0 0 100px;
+    text-align: justify;
+}
+
+.text-slide h2 {
+    font-size: 24px;
+    color: #fff;
+}
+
+.text-slide p {
+    font-size: 14px;
+    color: #fff;
+}
+
+.slide-more {
+    float: left;
+    background: #f26c4e;
+    padding: 5px 25px;
+    border-radius: 5px;
+    color: #fff;
+    margin: 20px 0;
+    text-decoration: none;
+}
+
+.image-slide {
+    position: absolute;
+    right: 130px;
+    bottom: 0px;
+}
+
+/*------------------------------ASIDE = SIDEBAR--------------------------------------------*/
+aside {
+    float: right;
+    width: 301px;
+    margin: 16px 0 0 17px;
+}
+
+.sidebar-block {
+    margin-bottom: 15px;
+}
+
+.newsletter {
+    background: #25b695;
+    height: 302px;
+    padding: 27px 17px;
+    box-sizing: border-box;
+}
+
+.newsletter h2 {
+    font-size: 24px;
+    color: #fff;
+    border-bottom: 5px solid #b5e1d7;
+    margin: 0 auto 20px;
+    padding-bottom: 7px;
+    width: 170px;
+}
+
+.newsletter input {
+    width: 100%;
+    padding: 5px 10px;
+    box-sizing: border-box;
+    font-size: 22px;
+    font-family: BYekan;
+    color: #b8b8b8;
+    border: none;
+    margin-bottom: 8px;
+}
+
+button.register {
+    background: #f26c4e;
+    border: none;
+    padding: 5px 30px;
+    font-size: 20px;
+    color: #fff;
+    font-family: BYekan;
+    margin: 0 30px 0 0;
+}
+
+.lastpost-head {
+    background: none repeat scroll 0 0 #f46551;
+    box-sizing: border-box;
+    height: 50px;
+    padding: 11px 10px;
+}
+.lastpost-head h2 {
+    color: #fff;
+    font-size: 17px;
+}
+
+.lastpost-content {
+    background: #fff;
+    height: 255px;
+    padding: 10px 15px;
+    box-sizing: border-box;
+}
+
+.lastpost-content li {
+    border-bottom: 1px solid #efefef;
+    padding: 5px 0;
+}
+
+.lastpost-content li a {
+    color: #5a5a5a;
+    text-decoration: none;
+
+}
+
+/* --------------------------------- LEFT SIDE ------------------------------------------- */
+.left-side {
+    width: 682px;
+    float: right;
+    margin-top: 16px;
+}
+
+.Post-block {
+    margin-bottom: 10px;
+}
+
+.postbox-head {
+    background: none repeat scroll 0 0 #25b695;
+    box-sizing: border-box;
+    height: 49px;
+    padding: 7px 15px;
+}
+
+.postbox-head h1 {
+    color: #fff;
+    font-size: 18px;
+
+}
+
+.postbox-content {
+    background: #fff;
+    box-sizing: border-box;
+    padding: 23px 30px;
+}
+.postbox-content img {
+    float: right;
+    margin-left: 40px;
+}
+
+.postbox-content p {
+    color: #585858;
+    font-size: 15px;
+}
+
+.postbox-foot {
+    background: #f0f0f0;
+    height: 43px;
+    position: relative;
+
+}
+
+.postbox-foot span.date {
+    color: #4f4f4f;
+    position: absolute;
+    right: 15px;
+    top: 8px;
+}
+
+.postbox-foot span.more {
+    color: #4f4f4f;
+    position: absolute;
+    left: 15px;
+    top: 8px;
+}
+/* ------------------ FOOTER ----------------------- */
+
+footer {
+    background: #323a45;
+    width: 100%;
+    min-width: 1000px;
+    border-top: 7px solid #454b54;
+    height: 120px;
+    position: relative;
+}
+
+.right-foot {
+    position: absolute;
+    right: 20px;
+    top: 30px;
+}
+
+.right-foot ul li {
+    border-left: 1px solid #989ca2;
+    float: right;
+    line-height: 12px;
+    padding: 0 10px;
+    margin-bottom: 15px;
+}
+
+.right-foot ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.copyright {
+    clear: both;
+    color: #fff;
+}
+
+.designer-logo {
+    position: absolute;
+    top: 25px;
+    left: 25px;
+}
